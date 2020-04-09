@@ -1,10 +1,3 @@
-=begin
-
-
-
-Quelle est la position dans l'array de la personne @epenser ?
-=end
-
 #######################################################
 #On declare nos deux arrays, donc un plus petit pour faire des tests
 journalists = Array.new 
@@ -116,6 +109,61 @@ puts journalists.sort
 #Quels sont les 50 handles les plus courts de ce array ?
 puts "Voici la liste par ordre croissant de taille: "
 puts journalists.sort_by(&:length)
+
+#########################
+#Quels sont les 50 handles les plus courts de ce array ?
+puts "Voici la liste par ordre croissant des 50 noms les plus courts "
+fiftyfirsts = journalists.sort_by(&:length)
+puts fiftyfirsts [1..50]
+
+#########################
+#Quelle est la position dans l'array de la personne @epenser ?
+puts "Voici l'index de la personne @epenser"
+puts journalists.index("@epenser")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 =begin
